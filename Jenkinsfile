@@ -25,7 +25,7 @@ pipeline {
                   steps {
                         echo "Deploying in Contingency System"
                   }				  
-				  
+				}  
 				  
             }
       }
