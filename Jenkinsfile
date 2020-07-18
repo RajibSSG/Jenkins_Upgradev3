@@ -12,21 +12,25 @@ pipeline {
                         echo 'Building Sample Maven Project'
                   }
             }
-            stage('Deploy') {
+            
+			stage('Deploy') {
                   steps {
                         echo "Deploying in Staging Area Environment"
                   }
             }
-            stage('Deploy Production') {
+            
+			stage('Deploy Production') {
                   steps {
                         echo "Deploying in Production System"
                   }
+			}
+			
 			stage('Deploy Contingency') {
                   steps {
                         echo "Deploying in Contingency System"
                   }				  
 				}  
 				  
-            }
+            
       }
 }
