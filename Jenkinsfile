@@ -14,14 +14,17 @@ pipeline {
             }
             stage('Deploy') {
                   steps {
-                        echo "Deploying in Staging Area"
+                        echo "Deploying in Staging Area Environment"
                   }
             }
             stage('Deploy Production') {
                   steps {
-                        echo "Deploying in Production Area"
+                        echo "Deploying in Production System"
                   }
-							  
+			stage('Deploy Contingency') {
+                  steps {
+                        echo "Deploying in Contingency System"
+                  }				  
 				  
 				  
             }
