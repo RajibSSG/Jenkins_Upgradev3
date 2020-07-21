@@ -31,17 +31,11 @@ pipeline {
 				input message: 'Approve Production Deployment?'
 				 
             }
-			     build job: 'Deploy_Application_Prodn_Env'
-               post {
-                success {
-                    echo "Now inside Production environment"
-                    
-                }
-            }
+		build job: 'Deploy_Application_Prodn_Env'
+         }      
 			
 		}	
 			
-        }
-                    
+                           
     }
 }
