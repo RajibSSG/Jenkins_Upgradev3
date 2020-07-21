@@ -31,7 +31,7 @@ pipeline {
 				input message: 'Approve Production Deployment?'
 				 
             }
-		build job: 'Deploy_Application_Prodn_Env'
+		build job: 'Deploy_Application_Prod_Env'
          }      
 			
 		}	
