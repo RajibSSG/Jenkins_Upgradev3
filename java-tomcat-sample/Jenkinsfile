@@ -29,8 +29,9 @@ pipeline {
             steps {
                 timeout(time:5, unit:'DAYS'){ 
 				input message: 'Approve Production Deployment?'
+				 
             }
-			     build job: 'Deploy_Application_Prodn_Env' 
+			     build job: 'Deploy_Application_Prodn_Env'
                post {
                 success {
                     echo "Now inside Production environment"
@@ -38,7 +39,7 @@ pipeline {
                 }
             }
 			
-			
+		}	
 			
         }
                     
